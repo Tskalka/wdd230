@@ -1,0 +1,19 @@
+body
+{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: blue;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+p{
+    font-style: italic;
+}
