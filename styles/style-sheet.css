@@ -3,6 +3,7 @@ body
     max-width: 960px;
     margin: 0 auto;
     background-color: whitesmoke;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 header{
@@ -14,7 +15,6 @@ header{
 ul{
     list-style-position: inside;
 }
-
 p{
     font-style: italic;
 }
