@@ -1,0 +1,48 @@
+/* Small/base */
+body
+{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+main {
+	max-width: fit-content;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+
+}
+
+main section {
+    text-align: center;
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+
+header{
+	text-align: center;
+	background-color: cadetblue;
+}
+
+footer{
+	text-align: center;
+	background-color: cadetblue;
+}
+
+/*Medium */
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+/*Large */
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section {
+		grid-column: span 1;
+	}
+}
