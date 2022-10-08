@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: #FFE052;
+    background-color: #D9D7D4;
 }
 h1,h2{
     font-family: 'Oswald', sans-serif;
@@ -10,14 +10,12 @@ main, footer, header{
 	margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
-
 nav{
     max-width: 960px;
     display: flex;
-    flex-direction: row;
+	flex-direction: column;
     background-color: #5271FF;
 }
-
 nav a {
     flex: 1 1 auto;
 	display: block;
@@ -34,4 +32,18 @@ nav a:hover {
 }
 h1, footer{
     background-color: #5271FF;
+}
+
+@media (min-width: 37.5em)
+{
+    nav{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 48em)
+{
+    nav a {
+		font-size: 1.3rem;
+	}
 }
