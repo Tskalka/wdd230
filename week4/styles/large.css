@@ -1,0 +1,49 @@
+@media only screen and (min-width: 64rem)
+{
+
+main {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat( 3, 1fr );
+}
+
+
+.Event{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Weather{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.Join{
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+
+.Hero{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    height: auto;
+}
+.News{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.Spotlight{
+    grid-column: 4/4;
+    grid-row: 1/4;
+}
+
+
+.navigation{
+    display: contents;
+}
+
+.Menu{
+    display: none;
+}
+
+}

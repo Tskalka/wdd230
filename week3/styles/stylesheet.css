@@ -16,7 +16,7 @@ nav{
 	flex-direction: column;
     background-color: #5271FF;
 }
-nav a {
+nav, a {
     flex: 1 1 auto;
 	display: block;
 	color: #fff;
@@ -30,6 +30,7 @@ nav a:hover {
 	background-color: #1F47FF;
 	color: #FFE052;
 }
+
 h1, footer{
     background-color: #5271FF;
 }

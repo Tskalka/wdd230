@@ -1,0 +1,85 @@
+body{
+    background-color: #FFE052;
+}
+
+main, footer, section, nav, a{
+    max-width: 980px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+	background-color: #D9D7D4;
+	color: #1F47FF;
+}
+nav, a {
+	display: flex;
+    flex: 1 1 auto;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+header{
+	background-color: #1F47FF;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+footer{
+    background-color: #1F47FF;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+    margin-right: 1rem;
+}
+
+.logo {
+	width: 50px;
+	height: auto;
+}
+
+.city-logo{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    height: auto;
+}
+
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+}
+section{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+div{
+    text-align: center;
+    background-color: #D9D7D4;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+main{
+    display: block;
+}
+
+.Menu{
+    display: contents;
+}
+
