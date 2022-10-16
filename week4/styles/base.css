@@ -122,3 +122,8 @@ main{
     list-style: none;
     padding: 0;
 }
+
+.banner-join{
+    grid-column: 1/5;
+    border: none;
+}
