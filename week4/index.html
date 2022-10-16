@@ -18,14 +18,21 @@
         <img class = "city-logo" src ="images/R.png" alt = "Rexburg City of Commerce Logo">
         <h1>Rexburg Chamber of Commerce</h1>
         <nav class = "navigation">
-            <a class="Menu" href="#">Menu</a>
-            <a href="index.html">Discover</a>
-            <a href="index.html">Directory</a>
-            <a href="index.html">Join</a>
-            <a href="index.html">Contact</a>
+            <ul class = "main-links">
+                <li><a class = "ham" href ="#">Menu</a></li>
+
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="index.html">Directory</a></li>
+                <li><a href="index.html">Join</a></li>
+                <li><a href="index.html">Contact</a></li>
+
+            </ul>
         </nav>
-        <img class = "logo" src="images/facebook icon.png" alt ="Facebook logo">
-        <img class = "logo" src ="images/linkedin icon.png" alt = "Linkedin logo">
+        <span>
+        <img class = "logo" src="images/facebook-icon.png" alt ="Facebook logo">
+        <img class = "logo" src ="images/linkedin-icon.png" alt = "Linkedin logo">
+        </span>
+        <div class = "current-date"></div>
     </header>
     <section>
 
@@ -36,17 +43,24 @@
         <div class ="Event"><h2>Event</h2></div>
         <div class ="Weather"><h2>Weather</h2></div>
         <div class = "News"><h2>News Release</h2></div>
-        <div class = "Spotlight"><h2>spotlights</h2></div>
+        <div class = "Spotlight">
+            <div>spotlights 1</div>
+            <div>spotlights 2</div>
+            <div>spotlights 3</div>
+        </div>
         <div class ="Join"><h2>Join</h2></div>
 
     </main>
     <footer>
-        <img class = "city-logo" src ="images/R.png" alt = "Rexburg City of Commerce Logo">
-        <p>Contact information</p>
-        <nav>
-            <a href = "https://www.google.com/maps/place/Rexburg,+ID/@43.830107,-111.8232025,13z/data=!3m1!4b1!4m5!3m4!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237" target="_blank">Map</a>
+        <img class = "footer-logo" src ="images/R.png" alt = "Rexburg City of Commerce Logo">
+        <h1 ckass = "footer-h1">Rexburg Chamber of Commerce</h1>
+        <p class = "contact-info">Contact information: (555)-555-5555</p>
+        <nav class = map-link>
+            <ul class = "footer-links">
+            <li><a href = "https://www.google.com/maps/place/Rexburg,+ID/@43.830107,-111.8232025,13z/data=!3m1!4b1!4m5!3m4!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237" target="_blank"> 📍 Map of Rexburg</a></li>
+            </ul>
         </nav>
-        &copy;
+        <div class = "footer-content">&copy;</div>
     </footer>
     <script src="scripts/main.js"></script>
 </body>

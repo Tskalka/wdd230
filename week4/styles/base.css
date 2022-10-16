@@ -13,8 +13,6 @@ nav a:hover {
 	color: #1F47FF;
 }
 nav, a {
-	display: flex;
-    flex: 1 1 auto;
 	color: #fff;
 	text-align: center;
 	padding: 15px;
@@ -25,20 +23,29 @@ nav, a {
 header{
 	background-color: #1F47FF;
 	padding: 5px 0;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	max-width: 980px;
 	margin: 0 auto;
 }
 
+header{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
 footer{
     background-color: #1F47FF;
     padding: 5px 0;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid black;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .logo {
@@ -53,6 +60,13 @@ footer{
 }
 
 .city-logo{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    height: auto;
+}
+
+.footer-logo{
     padding-left: 10px;
     padding-right: 10px;
     width: 150px;
@@ -79,7 +93,32 @@ main{
     display: block;
 }
 
-.Menu{
-    display: contents;
+
+.main-links li:first-child{
+    display: block;
 }
 
+.main-links li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "❌ ";
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
