@@ -37,7 +37,7 @@ let days = [
     'Saturday'
   ];
 //Banner logic
-// Join Us Banner 
+//Join Us Banner 
 let banner = "";
 if (days[date.getDay()] == "Monday" || days[date.getDay() == "Tuesday"]) {
     banner = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
@@ -45,3 +45,36 @@ if (days[date.getDay()] == "Monday" || days[date.getDay() == "Tuesday"]) {
     banner = "";
 }
 document.querySelector('.banner-join').innerHTML = banner;
+
+// Lazy-Loading logic
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }

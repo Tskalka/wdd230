@@ -127,3 +127,7 @@ main{
     grid-column: 1/5;
     border: none;
 }
+
+.hover:hover{
+    box-shadow: none;
+}
